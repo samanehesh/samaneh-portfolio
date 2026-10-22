@@ -1,10 +1,5 @@
-import { hasLocale } from "next-intl";
-import { notFound } from "next/navigation";
-import { routing } from "./routing";
+import { getPortfolioRoute } from "../lib/portfolio-route";
 
 export function resolveLocale(segments: string[] | undefined) {
-  if (segments && segments.length > 1) notFound();
-  const locale = segments?.[0] ?? routing.defaultLocale;
-  if (!hasLocale(routing.locales, locale)) notFound();
-  return locale;
+  return getPortfolioRoute(segments).locale;
 }

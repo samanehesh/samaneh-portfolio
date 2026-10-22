@@ -9,3 +9,9 @@
 - Screenshots copied from the user’s public portfolio repository into public/projects/.
 
 Only the verified Remarcable frontend has a live-demo link. Other cards link to their public source repositories. No private employer project details were published from chat history.
+
+## Featured contributor projects
+
+- Dinemetric: https://dinemetric.vercel.app/ — public sign-in screen captured at the same viewport as Smilysis. Contributor role supplied by the user. Technical approach verified from the local project oRPC client; no private source code is included in the portfolio.
+- Smilysis: https://smilysis-two.vercel.app/ — public welcome screen captured. Contributor role supplied by the user. Shared Supabase authentication client verified locally; no private source code included.
+- Technical decisions are framed as project implementation, not personal architecture ownership.

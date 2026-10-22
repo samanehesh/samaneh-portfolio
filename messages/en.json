@@ -6,35 +6,17 @@
     "about": "About",
     "contact": "Contact"
   },
-  "label": "A little about me",
+  "label": "Samaneh Heshmatzadeh · Metro Vancouver",
   "greeting": "Hello, my name is",
   "name": "Samaneh Heshmatzadeh",
-  "intro": "I build thoughtful digital experiences. A developer who cares about the details, from the first idea to the final interaction.",
+  "intro": "I build web applications with React, Next.js, Django, and PostgreSQL—from responsive interfaces to APIs and database workflows. I focus on clear interfaces, maintainable code, and reliable experiences for the people using them.",
   "work": "Explore my work",
   "about": "More about me",
   "photo": "Portrait of Samane",
   "photoNote": "A space for the person behind the pixels.",
-  "strengthTitle": "Good work starts with curiosity.",
-  "strengths": {
-    "0": {
-      "number": "01",
-      "title": "Built with care",
-      "description": "Clean interfaces, considered interactions, and a focus on making the web feel a little more human."
-    },
-    "1": {
-      "number": "02",
-      "title": "Always curious",
-      "description": "Exploring ideas, learning through building, and staying open to a different way of solving a problem."
-    },
-    "2": {
-      "number": "03",
-      "title": "Made for people",
-      "description": "Starting with what people need and turning complexity into something clear and useful."
-    }
-  },
-  "projectLabel": "Selected work",
+  "projectLabel": "Featured work",
   "projectTitle": "Ideas, brought to life.",
-  "projectIntro": "Selected projects spanning full-stack platforms, API integrations, and interactive web applications.",
+  "projectIntro": "A selection of team contributions and full-stack projects. Explore each project to learn more.",
   "projects": {
     "restaurant": {
       "title": "Restaurant Insights",
@@ -52,7 +34,14 @@
       "title": "Sips Cafe",
       "type": "Full-stack ordering platform",
       "description": "A bubble tea ordering platform with menu browsing, payments, and administration tools.",
-      "details": "A BCIT team project using C#, ASP.NET Core MVC, and Azure SQL. Features include PayPal payments, user and order management, authentication and authorization, email verification, and Google reCAPTCHA."
+      "details": "A BCIT team project using C#, ASP.NET Core MVC, and Azure SQL. Features include PayPal payments, user and order management, authentication and authorization, email verification, and Google reCAPTCHA.",
+      "role": "Full-stack developer · BCIT team project",
+      "problem": "Bring bubble tea ordering, payments, and day-to-day administration into one application.",
+      "decision": "Used ASP.NET Identity for authentication and authorization, with email verification and reCAPTCHA to support account security.",
+      "context": "BCIT team project",
+      "contribution": "Developed full-stack functionality with C#, ASP.NET Core, and Azure SQL. My work included authentication and authorization with ASP.NET Identity, email verification, reCAPTCHA, REST APIs, and relational database structures.",
+      "outcome": "The team built an ordering platform connecting menu browsing, PayPal checkout, and administration. The project provided hands-on experience integrating identity, APIs, and a relational database.",
+      "screenshotCaption": "Storefront homepage · Sips Cafe"
     },
     "movie": {
       "title": "Movie Mania",
@@ -71,6 +60,32 @@
       "type": "Backend and billing application",
       "description": "A billing application with authenticated access and MongoDB-backed billing records.",
       "details": "Built with Node.js and Express, using Passport for authentication and MongoDB for storing billing information. The application supports publishing and managing customer bills."
+    },
+    "dinemetric": {
+      "title": "Dinemetric",
+      "type": "AI-powered restaurant management & analytics",
+      "description": "An AI-powered restaurant platform with menu recommendations and insights to support daily operations.",
+      "role": "Contributor · team project",
+      "problem": "Help restaurant teams turn operational data into actionable insights and AI-powered menu recommendations.",
+      "decision": "Uses a typed oRPC client with request batching to connect the Next.js interface to application services.",
+      "details": "Team contribution to an AI-powered restaurant management and analytics application that provides menu recommendations. The live link opens the public sign-in screen shown above.",
+      "context": "Team contribution",
+      "contribution": "Contributed to the team developing Dinemetric, an AI-powered restaurant management platform. The product connects restaurant workflows with operational insights and menu recommendations.",
+      "outcome": "The platform gives restaurant teams a single place to access operational insights and AI-powered menu recommendations.",
+      "screenshotCaption": "Public sign-in screen · Dinemetric"
+    },
+    "smilysis": {
+      "title": "Smilysis",
+      "type": "Dental health tracking application",
+      "description": "An application for tracking dental habits and progress with AI-powered scans and personalized insights.",
+      "role": "Contributor · team project",
+      "problem": "Bring dental habits, scan-based insights, and oral-health progress into one tracking experience.",
+      "decision": "Uses a shared Supabase client with session persistence so sign-in state can be reused across the application.",
+      "details": "Team contribution to a dental-health tracking application. The live link opens the public welcome screen introducing scans, food insights, and oral-health scores.",
+      "context": "Team contribution",
+      "contribution": "Contributed to the team developing Smilysis, a dental-health tracking application. The product brings together daily habits, scan-based insights, and personalized progress tracking.",
+      "outcome": "The application brings dental habits, scan-based insights, and oral-health progress into one experience.",
+      "screenshotCaption": "Public welcome screen · Smilysis"
     }
   },
   "detail": "Project notes",
@@ -97,5 +112,44 @@
   "emailCopyFailed": "Couldn’t copy. Please select and copy the address.",
   "viewCode": "View code",
   "liveDemo": "Live demo",
-  "projectScreenshot": "Screenshot of {title}"
+  "projectScreenshot": "Screenshot of {title}",
+  "heroTitle": "Full-stack developer.",
+  "heroEmphasis": "Practical web applications.",
+  "aboutTitle": "An engineering foundation. Hands-on software experience.",
+  "aboutBio": "I’m Samaneh Heshmatzadeh, a full-stack software developer based in Metro Vancouver. I bring an electrical engineering background and a Software Systems Developer certificate from BCIT to my work—combining analytical problem-solving with hands-on experience building and supporting web applications.",
+  "experienceLabel": "Experience highlights",
+  "experience": {
+    "sparkbridge": {
+      "company": "Sparkbridge",
+      "role": "Full Stack Software Developer",
+      "description": "Build and maintain customer-facing applications with React, Next.js, Django, and PostgreSQL. My work spans dashboards, onboarding flows, REST APIs, authentication, and AI integrations."
+    },
+    "pdf": {
+      "company": "PDF Solutions",
+      "role": "Software Developer Intern",
+      "description": "Developed Angular interfaces and .NET Core APIs for semiconductor manufacturing analytics. Connected AWS Keyspaces data to services and built D3.js visualizations for defect analysis."
+    },
+    "pellonia": {
+      "company": "Pellonia",
+      "role": "Junior Software Developer",
+      "description": "Developed reusable React components for a customer-facing anti-piracy dashboard, integrated REST APIs, and supported debugging, releases, and ongoing interface improvements."
+    }
+  },
+  "showExperience": "Show experience highlights",
+  "hideExperience": "Hide experience highlights",
+  "moreProjects": "More projects",
+  "caseStudy": {
+    "role": "My role",
+    "problem": "The problem",
+    "decision": "Technical decision",
+    "label": "Project case study",
+    "context": "Team context",
+    "contribution": "My contribution",
+    "outcome": "Outcome",
+    "next": "Next project",
+    "visit": "Visit live site"
+  },
+  "backToProjects": "Back to projects",
+  "technologies": "Technologies",
+  "viewProject": "View project"
 }

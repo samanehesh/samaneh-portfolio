@@ -1,8 +1,47 @@
-export const strengthIds = ["0", "1", "2"] as const;
-
 export const projects = [
   {
+    "id": "dinemetric",
+    "featured": true,
+    "art": "dinemetric",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "oRPC",
+      "Supabase"
+    ],
+    "repoUrl": null,
+    "liveUrl": "https://dinemetric.vercel.app/",
+    "image": "/projects/dinemetric.jpg"
+  },
+  {
+    "id": "smilysis",
+    "featured": true,
+    "art": "smilysis",
+    "tags": [
+      "Next.js",
+      "React",
+      "Supabase"
+    ],
+    "repoUrl": null,
+    "liveUrl": "https://smilysis-two.vercel.app/",
+    "image": "/projects/smilysis.jpg"
+  },
+  {
+    "id": "sips",
+    "featured": true,
+    "art": "cafe",
+    "tags": [
+      "C#",
+      "ASP.NET Core",
+      "Azure SQL"
+    ],
+    "repoUrl": "https://github.com/samanehesh/my-sips",
+    "liveUrl": null,
+    "image": "/projects/sips-home.jpg"
+  },
+  {
     "id": "restaurant",
+    "featured": false,
     "art": "restaurant",
     "tags": [
       "Next.js",
@@ -16,6 +55,7 @@ export const projects = [
   },
   {
     "id": "remarcable",
+    "featured": false,
     "art": "search",
     "tags": [
       "Django",
@@ -27,19 +67,8 @@ export const projects = [
     "image": null
   },
   {
-    "id": "sips",
-    "art": "cafe",
-    "tags": [
-      "C#",
-      "ASP.NET Core",
-      "Azure SQL"
-    ],
-    "repoUrl": "https://github.com/samanehesh/my-sips",
-    "liveUrl": null,
-    "image": "/projects/sips-home.jpg"
-  },
-  {
     "id": "movie",
+    "featured": false,
     "art": "movies",
     "tags": [
       "React",
@@ -53,6 +82,7 @@ export const projects = [
   },
   {
     "id": "deck",
+    "featured": false,
     "art": "store",
     "tags": [
       "C#",
@@ -66,6 +96,7 @@ export const projects = [
   },
   {
     "id": "billing",
+    "featured": false,
     "art": "billing",
     "tags": [
       "Node.js",
