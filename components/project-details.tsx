@@ -12,6 +12,7 @@ export async function ProjectDetails({ project: p, locale }: { project: Portfoli
   const next = featured[(featured.findIndex(project => project.id === p.id) + 1) % featured.length];
   const titleUrl = p.liveUrl ?? p.repoUrl;
   return <>
+    <div className="aurora" aria-hidden="true" />
     <a className="skip" href="#project-main">{t("skip")}</a>
     <header className="header project-header wrap">
       <Link className="brand" href="/"><span className="terminal" aria-hidden="true">&gt;_</span>{t("brand")}</Link>
@@ -24,7 +25,7 @@ export async function ProjectDetails({ project: p, locale }: { project: Portfoli
       <Link className="text-link" href="/#projects"><span aria-hidden="true">←</span>{t("backToProjects")}</Link>
       <div className="case-study-intro">
         <p className="eyebrow">{t("caseStudy.label")}</p>
-        <h1>{titleUrl ? <a className="project-title-link" href={titleUrl} target="_blank" rel="noopener noreferrer">{t(`projects.${p.id}.title`)}<span aria-hidden="true"> ↗</span></a> : t(`projects.${p.id}.title`)}</h1>
+        <h1>{titleUrl ? <a className="project-title-link" href={titleUrl} target="_blank" rel="noopener noreferrer">{t(`projects.${p.id}.title`)} <span aria-hidden="true">↗</span></a> : t(`projects.${p.id}.title`)}</h1>
         <p className="intro">{t(`projects.${p.id}.description`)}</p>
       </div>
       <ul className="case-study-tags project-technologies" dir="ltr" aria-label={t("technologies")}>
