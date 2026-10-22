@@ -11,6 +11,9 @@ export async function ProjectDetails({ project: p, locale }: { project: Portfoli
   const featured = projects.filter(project => project.featured);
   const next = featured[(featured.findIndex(project => project.id === p.id) + 1) % featured.length];
   const titleUrl = p.liveUrl ?? p.repoUrl;
+  const sectionNumber = new Intl.NumberFormat(locale === "fa" ? "fa-IR" : "en", {
+    useGrouping: false
+  });
   return <>
     <div className="aurora" aria-hidden="true" />
     <a className="skip" href="#project-main">{t("skip")}</a>
@@ -24,7 +27,6 @@ export async function ProjectDetails({ project: p, locale }: { project: Portfoli
     <main id="project-main" className="project-detail wrap">
       <Link className="text-link" href="/#projects"><span aria-hidden="true">←</span>{t("backToProjects")}</Link>
       <div className="case-study-intro">
-        <p className="eyebrow">{t("caseStudy.label")}</p>
         <h1>{titleUrl ? <a className="project-title-link" href={titleUrl} target="_blank" rel="noopener noreferrer">{t(`projects.${p.id}.title`)} <span aria-hidden="true">↗</span></a> : t(`projects.${p.id}.title`)}</h1>
         <p className="intro">{t(`projects.${p.id}.description`)}</p>
       </div>
@@ -34,7 +36,7 @@ export async function ProjectDetails({ project: p, locale }: { project: Portfoli
       {p.image && <figure className="case-study-figure"><div className="project-detail-image"><Image src={p.image} alt={t("projectScreenshot", { title: t(`projects.${p.id}.title`) })} fill sizes="(max-width: 720px) calc(100vw - 40px), 1000px" preload /></div><figcaption>{t(`projects.${p.id}.screenshotCaption`)}</figcaption></figure>}
       <div className="case-study-body">
         {(["problem", "contribution", "decision", "outcome"] as const).map((field, index) => <section className="case-study-section" key={field} aria-labelledby={`case-${field}`}>
-          <span className="case-study-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+          <span className="case-study-number" aria-hidden="true">{sectionNumber.format(index + 1)}</span>
           <div><h2 id={`case-${field}`}>{t(`caseStudy.${field}`)}</h2><p>{t(`projects.${p.id}.${field}`)}</p></div>
         </section>)}
       </div>

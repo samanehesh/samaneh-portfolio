@@ -242,3 +242,4 @@ body{overflow-x:clip}
 @media(max-width:400px){.header .tools{gap:7px}.header .tool-divider{display:none}.language-option{padding-inline:7px;font-size:11px}.header .brand{font-size:13px;gap:6px}.header .theme-toggle{width:54px}.header .theme-toggle i{width:24px;height:24px}.header .theme-toggle span{font-size:17px;width:25px}[data-theme=dark] .header .theme-toggle i{transform:translateX(26px)}}
 .case-study-facts{grid-template-columns:1fr 1.3fr}@media(max-width:720px){.case-study-facts{grid-template-columns:1fr}.case-study-facts>div:last-child{grid-column:auto}}
 .project-technologies{margin-top:28px;gap:8px}.project-technologies li{padding:7px 12px;background:var(--soft);font-size:13px}
+html[lang=fa] .project-technologies{justify-content:flex-end}
