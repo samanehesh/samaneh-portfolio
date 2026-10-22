@@ -5,3 +5,7 @@ out/
 .env*
 !.env.example
 *.log
+
+# Local hosting metadata and generated previews
+.openai/
+output/

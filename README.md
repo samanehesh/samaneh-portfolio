@@ -23,7 +23,7 @@ Add your PDF as `public/resume.pdf`, then rebuild (or refresh in development) to
 ## Personalize
 
 - Edit translations in `messages/en.json` and `messages/fa.json`. Pages and metadata use next-intl; shared project IDs, artwork, and technology tags live in `lib/projects.ts`.
-- Replace the sample projects with your work. Email, LinkedIn, and GitHub links are configured in `lib/contact.ts`.
+- Featured project data lives in `lib/projects.ts`. Email, LinkedIn, and GitHub links are configured in `lib/contact.ts`.
 - Update metadata in `app/[[...locale]]/page.tsx`. Search indexing is controlled by the production environment configuration below.
 - Styling lives in `app/globals.css`. The theme follows system preference until changed and saves the choice locally.
 
