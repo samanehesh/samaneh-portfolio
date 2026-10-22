@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
-const skills = ["Next.js", "React", "TypeScript", "CSS", "Node.js", "REST APIs", "SQL", "PostgreSQL"];
+const skills = ["Next.js", "React", "TypeScript", "CSS", "Python", "Django", "C#", "ASP.NET Core", "Node.js", "REST APIs", "SQL", "PostgreSQL"];
 
 export function SkillsCarousel() {
   const t = useTranslations();
