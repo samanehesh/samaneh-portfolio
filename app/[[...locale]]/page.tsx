@@ -1,3 +1,4 @@
+import { LanguageSwitcher } from "../../components/language-switcher";
 import { indexingEnabled, siteUrl, projectPath } from "../../lib/site";
 import { getPortfolioRoute } from "../../lib/portfolio-route";
 import { ProjectDetails } from "../../components/project-details";
@@ -10,9 +11,8 @@ import { join } from "node:path";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { routing } from "../../i18n/routing";
-import NextLink from "next/link";
 import { projects } from "../../lib/projects";
-import { Link, getPathname } from "../../i18n/navigation";
+import { Link } from "../../i18n/navigation";
 import { ThemeToggle } from "../../components/theme-toggle";
 import { SiteNavigation } from "../../components/site-navigation";
 
@@ -52,7 +52,6 @@ export default async function Home({ params }: { params: Promise<{ locale?: stri
   if (project) return <ProjectDetails project={project} locale={locale} />;
   const t = await getTranslations({ locale });
   const resumeAvailable = existsSync(join(process.cwd(), "public", "resume.pdf"));
-  const otherLocale = locale === "fa" ? "en" : "fa";
   return <>
     <div id="top" aria-hidden="true" />
     <a className="skip" href="#main">{t("skip")}</a>
@@ -60,7 +59,7 @@ export default async function Home({ params }: { params: Promise<{ locale?: stri
     <header className="header wrap">
       <Link className="brand" href="/"><span className="terminal" aria-hidden="true">&gt;_</span>{t("brand")}</Link>
       <SiteNavigation />
-      <div className="tools"><NextLink className="language" href={getPathname({ locale: otherLocale, href: "/" })} hrefLang={otherLocale} lang={otherLocale}>{t("switchLanguage")}</NextLink><span className="tool-divider" /><ThemeToggle label={t("theme")} /></div>
+      <div className="tools"><LanguageSwitcher locale={locale} /><span className="tool-divider" /><ThemeToggle label={t("theme")} /></div>
     </header>
     <main id="main">
       <section className="hero wrap" aria-labelledby="intro-title">
