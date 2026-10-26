@@ -206,3 +206,10 @@ body{overflow-x:clip}
 @media(max-width:400px){.header .tools{gap:7px}.header .tool-divider{display:none}.language-option{padding-inline:7px;font-size:11px}.header .brand{font-size:13px;gap:6px}.header .theme-toggle{width:54px}.header .theme-toggle i{width:24px;height:24px}.header .theme-toggle span{font-size:17px;width:25px}[data-theme=dark] .header .theme-toggle i{transform:translateX(26px)}}
 .project-technologies{margin-top:28px;gap:8px}.project-technologies li{padding:7px 12px;background:var(--soft);font-size:13px}
 html[lang=fa] .project-technologies{justify-content:flex-end}
+
+.hero-actions .button{width:190px;min-height:52px;padding:12px 16px;gap:14px;text-align:center}
+.tertiary{background:var(--bg);color:var(--accent);border:1px solid var(--line);box-shadow:none}
+.tertiary:hover{background:var(--soft);border-color:var(--accent)}
+@media(max-width:440px){.hero-actions{gap:12px}.hero-actions .button{width:100%}.hero-actions>a,.hero-actions .resume-action{width:100%}}
+
+.contact-icon{flex-shrink:0;display:block}.contact-links .button{gap:10px}

@@ -1,3 +1,4 @@
+import { ContactIcon } from "../../components/contact-icon";
 import { LanguageSwitcher } from "../../components/language-switcher";
 import { indexingEnabled, siteUrl, projectPath } from "../../lib/site";
 import { getPortfolioRoute } from "../../lib/portfolio-route";
@@ -63,7 +64,7 @@ export default async function Home({ params }: { params: Promise<{ locale?: stri
     </header>
     <main id="main">
       <section className="hero wrap" aria-labelledby="intro-title">
-        <div className="hero-copy"><p className="eyebrow"><span />{t("label")}</p><h1 id="intro-title">{t("heroTitle")}<br /><span>{t("heroEmphasis")}</span></h1><p className="intro">{t("intro")}</p><div className="hero-actions"><a className="button primary" href="#projects">{t("work")}<span aria-hidden="true">↗</span></a><span className="resume-action">{resumeAvailable ? <a className="button secondary" href="/resume.pdf" download="resume.pdf">{t("downloadResume")}<span aria-hidden="true">↓</span></a> : <><button className="button secondary" type="button" disabled aria-describedby="resume-status">{t("downloadResume")}<span aria-hidden="true">↓</span></button><small id="resume-status">{t("resumeUnavailable")}</small></>}</span><a className="text-link" href="#about">{t("about")}<span aria-hidden="true">↓</span></a></div></div>
+        <div className="hero-copy"><p className="eyebrow"><span />{t("label")}</p><h1 id="intro-title">{t("heroTitle")}<br /><span>{t("heroEmphasis")}</span></h1><p className="intro">{t("intro")}</p><div className="hero-actions"><a className="button primary" href="#projects">{t("work")}<span aria-hidden="true">↗</span></a><span className="resume-action">{resumeAvailable ? <a className="button secondary" href="/resume.pdf" download="resume.pdf">{t("downloadResume")}<span aria-hidden="true">↓</span></a> : <><button className="button secondary" type="button" disabled aria-describedby="resume-status">{t("downloadResume")}<span aria-hidden="true">↓</span></button><small id="resume-status">{t("resumeUnavailable")}</small></>}</span><a className="button tertiary" href="#about">{t("about")}<span aria-hidden="true">↓</span></a></div></div>
       </section>
       <section className="about wrap" id="about" aria-labelledby="about-title">
         <div className="section-top">
@@ -86,7 +87,7 @@ export default async function Home({ params }: { params: Promise<{ locale?: stri
         <div className="section-top"><p className="eyebrow">{t("projectLabel")}</p><h2 id="work-title">{t("projectTitle")}</h2><p className="section-intro">{t("projectIntro")}</p></div>
         <div className="project-grid featured-grid">{projects.filter(p => p.featured).map((p,i) => <ProjectCard key={p.id} project={p} index={i} featured />)}</div>
       </section>
-      <section className="contact wrap" id="contact"><p className="eyebrow">{t("contactLabel")}</p><h2>{t("contactTitle")}</h2><p>{t("contactIntro")}</p><div className="contact-links"><a className="button primary" href={contact.composeUrl} target="_blank" rel="noopener noreferrer">{t("emailMe")}<span aria-hidden="true">↗</span></a><a className="button secondary" href={contact.linkedin} target="_blank" rel="noopener noreferrer">{t("linkedin")}<span aria-hidden="true">↗</span></a><a className="button secondary" href={contact.github} target="_blank" rel="noopener noreferrer">{t("github")}<span aria-hidden="true">↗</span></a><CopyEmail email={contact.email} /></div><span className="contact-flower" aria-hidden="true">✳</span></section>
+      <section className="contact wrap" id="contact"><p className="eyebrow">{t("contactLabel")}</p><h2>{t("contactTitle")}</h2><p>{t("contactIntro")}</p><div className="contact-links"><a className="button secondary" href={contact.composeUrl} target="_blank" rel="noopener noreferrer"><ContactIcon type="email" />{t("emailMe")}</a><a className="button secondary" href={contact.linkedin} target="_blank" rel="noopener noreferrer"><ContactIcon type="linkedin" />{t("linkedin")}</a><a className="button secondary" href={contact.github} target="_blank" rel="noopener noreferrer"><ContactIcon type="github" />{t("github")}</a><CopyEmail email={contact.email} /></div><span className="contact-flower" aria-hidden="true">✳</span></section>
     </main>
     <footer className="footer wrap"><a className="brand" href="#top"><span className="terminal" aria-hidden="true">&gt;_</span>{t("brand")}</a><p>{t("footer")}</p><a className="text-link" href="#top">{t("backTop")}<span aria-hidden="true">↑</span></a></footer>
   </>;
