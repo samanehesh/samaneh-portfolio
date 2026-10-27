@@ -23,7 +23,7 @@ export const projects = [
       "Supabase"
     ],
     "repoUrl": null,
-    "liveUrl": "https://smilysis-two.vercel.app/",
+    "liveUrl": "https://smilysis.vercel.app/",
     "image": "/projects/smilysis.jpg"
   },
   {
