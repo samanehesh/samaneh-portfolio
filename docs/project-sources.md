@@ -5,3 +5,5 @@
 - Sips Cafe: public/resume.pdf and https://github.com/samanehesh/my-sips. Storefront screenshot reused from the user’s previous portfolio repository.
 
 Screenshots are in public/projects/. Technical approaches describe project implementation rather than sole architecture ownership. No private employer source code is included.
+
+- LeadEngine: case-study text and technology list supplied by the user. No external URLs supplied yet. The SVG cover illustrates the described assignment workflow; it is not a product screenshot.

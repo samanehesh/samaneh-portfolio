@@ -17,7 +17,7 @@ export async function ProjectCard({ project: p, featured = false }: { project: P
   return <article className={`project project-preview${featured ? " featured-project" : ""}`}>
     <Link className="project-card-link" href={`/projects/${p.id}/`} aria-label={t(`projects.${p.id}.title`)}>
       <div className="project-gallery-image">
-        {p.image && <Image src={p.image} alt={t("projectScreenshot", { title: t(`projects.${p.id}.title`) })} fill sizes="(max-width: 720px) calc(100vw - 40px), 550px" />}
+        {p.image && <Image src={p.image} alt={p.id === "leadengine" ? t("projects.leadengine.imageAlt") : t("projectScreenshot", { title: t(`projects.${p.id}.title`) })} fill sizes="(max-width: 720px) calc(100vw - 40px), 550px" />}
 
         <span className="project-gallery-arrow" aria-hidden="true">↗</span>
       </div>

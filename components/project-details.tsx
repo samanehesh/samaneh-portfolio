@@ -33,7 +33,7 @@ export async function ProjectDetails({ project: p, locale }: { project: Portfoli
       <ul className="case-study-tags project-technologies" dir="ltr" aria-label={t("technologies")}>
         {p.tags.map(tag => <li key={tag}>{tag}</li>)}
       </ul>
-      {p.image && <figure className="case-study-figure"><div className="project-detail-image"><Image src={p.image} alt={t("projectScreenshot", { title: t(`projects.${p.id}.title`) })} fill sizes="(max-width: 720px) calc(100vw - 40px), 1000px" preload /></div><figcaption>{t(`projects.${p.id}.screenshotCaption`)}</figcaption></figure>}
+      {p.image && <figure className="case-study-figure"><div className="project-detail-image"><Image src={p.image} alt={p.id === "leadengine" ? t("projects.leadengine.imageAlt") : t("projectScreenshot", { title: t(`projects.${p.id}.title`) })} fill sizes="(max-width: 720px) calc(100vw - 40px), 1000px" preload /></div><figcaption>{t(`projects.${p.id}.screenshotCaption`)}</figcaption></figure>}
       <div className="case-study-body">
         {(["problem", "contribution", "decision", "outcome"] as const).map((field, index) => <section className="case-study-section" key={field} aria-labelledby={`case-${field}`}>
           <span className="case-study-number" aria-hidden="true">{sectionNumber.format(index + 1)}</span>

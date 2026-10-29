@@ -43,6 +43,17 @@
       "contribution": "Designed and developed a full-stack cafe ordering application using ASP.NET Core MVC, C#, Entity Framework Core, and a relational database.\n\nI implemented user authentication and authorization, email verification, reCAPTCHA protection, menu and product management, customizable drink options, shopping-cart functionality, and order processing.\n\nI also designed REST-based application workflows, created relational data models for products, orders, transactions, and customization options, and integrated PayPal Checkout for online payments.\n\nAdministrative functionality was added to support role-based access and management of menu items and application data.",
       "outcome": "The completed application supports the full customer ordering workflow—from account creation and customized product selection through checkout and payment—while also providing administrative functionality for managing menu data and orders.",
       "screenshotCaption": "Storefront homepage · Sips Cafe"
+    },
+    "leadengine": {
+      "title": "LeadEngine",
+      "type": "Full-stack lead management application",
+      "description": "A lead management platform that automates agent assignment using priority, workload, and capacity rules.",
+      "problem": "Sales teams need a reliable way to distribute incoming leads among agents while considering factors such as agent type, priority, workload, and capacity. Manual assignment can be inconsistent and difficult to scale as the number of leads and agents grows.",
+      "contribution": "Built a full-stack lead management application using Next.js on the frontend and Django REST Framework on the backend.\n\nI developed agent, manager, and lead management features, including create, edit, detail, search, sorting, and pagination workflows. I also implemented authenticated API communication between the frontend and backend using token-based authentication.\n\nOn the backend, I designed REST APIs and database models for agents, managers, and leads, and developed a custom lead-assignment workflow that automatically selects an eligible agent based on agent type, priority, recent lead count, and capacity.\n\nI also built dashboard functionality for visualizing lead and agent data, implemented date-based filtering, and contributed to integration and testing across the application.",
+      "decision": "I separated the application into a Next.js frontend and Django REST API backend so that the user interface, business logic, and data layer could evolve independently.\n\nThe lead-assignment logic was implemented on the backend to keep the business rules centralized and consistent. Agents are evaluated by priority and recent workload, allowing the system to assign leads only to agents who still have available capacity.\n\nI also used PostgreSQL for persistent data storage and API-based communication between the frontend and backend.",
+      "outcome": "LeadEngine automates lead distribution while giving users a central interface for managing agents, managers, and incoming leads.\n\nThe application reduces the need for manual lead assignment and provides a structured way to enforce capacity and priority rules while monitoring lead activity through dashboards and filtered reporting.",
+      "screenshotCaption": "Lead-assignment workflow · illustrative cover",
+      "imageAlt": "LeadEngine workflow: incoming lead, priority and capacity rules, eligible agent"
     }
   },
   "contactLabel": "What’s next?",

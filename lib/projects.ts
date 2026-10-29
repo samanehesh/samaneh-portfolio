@@ -50,5 +50,26 @@ export const projects = [
     "repoUrl": "https://github.com/samanehesh/my-sips",
     "liveUrl": null,
     "image": "/projects/sips-home.jpg"
+  },
+  {
+    "id": "leadengine",
+    "featured": true,
+    "art": "leadengine",
+    "tags": [
+      "Next.js",
+      "React",
+      "JavaScript",
+      "Django",
+      "Django REST Framework",
+      "Python",
+      "PostgreSQL",
+      "REST APIs",
+      "Token Authentication",
+      "Chart.js",
+      "Heroku"
+    ],
+    "repoUrl": null,
+    "liveUrl": null,
+    "image": "/projects/leadengine.svg"
   }
 ] as const;
