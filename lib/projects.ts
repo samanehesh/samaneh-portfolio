@@ -17,6 +17,27 @@ export const projects = [
     "image": "/projects/dinemetric.jpg"
   },
   {
+    "id": "leadengine",
+    "featured": true,
+    "art": "leadengine",
+    "tags": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Django",
+      "Django REST Framework",
+      "Python",
+      "PostgreSQL",
+      "REST APIs",
+      "Token Authentication",
+      "Chart.js",
+      "Heroku"
+    ],
+    "repoUrl": null,
+    "liveUrl": null,
+    "image": "/projects/leadengine.svg"
+  },
+  {
     "id": "smilysis",
     "featured": true,
     "art": "smilysis",
@@ -50,26 +71,5 @@ export const projects = [
     "repoUrl": "https://github.com/samanehesh/my-sips",
     "liveUrl": null,
     "image": "/projects/sips-home.jpg"
-  },
-  {
-    "id": "leadengine",
-    "featured": true,
-    "art": "leadengine",
-    "tags": [
-      "Next.js",
-      "React",
-      "JavaScript",
-      "Django",
-      "Django REST Framework",
-      "Python",
-      "PostgreSQL",
-      "REST APIs",
-      "Token Authentication",
-      "Chart.js",
-      "Heroku"
-    ],
-    "repoUrl": null,
-    "liveUrl": null,
-    "image": "/projects/leadengine.svg"
   }
 ] as const;
