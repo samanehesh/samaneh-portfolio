@@ -28,10 +28,10 @@
       "title": "Smilysis",
       "type": "Dental health tracking application",
       "description": "An application for tracking dental habits and progress with AI-powered scans and personalized insights.",
-      "problem": "Bring dental habits, scan-based insights, and oral-health progress into one tracking experience.",
-      "decision": "Uses a shared Supabase client with session persistence so sign-in state can be reused across the application.",
-      "contribution": "Contributed to the team developing Smilysis, a dental-health tracking application. The product brings together daily habits, scan-based insights, and personalized progress tracking.",
-      "outcome": "The application brings dental habits, scan-based insights, and oral-health progress into one experience.",
+      "problem": "Dental issues can develop between regular dental visits, while people often have limited ways to monitor changes in their oral health or understand how daily habits and diet may affect their teeth and gums.",
+      "decision": "The application combines structured user data with AI-assisted dental-image analysis and health-tracking workflows.\n\nThe platform was designed to keep image analysis, oral-care tracking, health insights, and user records within a unified experience, making it easier for users to monitor changes over time rather than relying only on occasional dental visits.",
+      "contribution": "Contributed to the development of Smilysis, an AI-powered preventive oral-health platform that helps users monitor their dental health between appointments.\n\nI worked on full-stack application features supporting user interactions, dental-health data, and AI-powered workflows. The platform allows users to submit dental images, track oral-care habits, review health-related insights, and receive personalized guidance based on their information.\n\nMy work included developing and improving frontend functionality, integrating application workflows with backend services and data storage, and troubleshooting issues across the application stack.",
+      "outcome": "Smilysis provides users with a centralized way to monitor oral-health habits, review AI-assisted dental insights, track changes over time, and better understand factors that may affect their dental health.",
       "screenshotCaption": "Public welcome screen · Smilysis"
     },
     "sips": {

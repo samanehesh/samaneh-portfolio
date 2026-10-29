@@ -23,7 +23,11 @@ export const projects = [
     "tags": [
       "Next.js",
       "React",
-      "Supabase"
+      "TypeScript",
+      "AI Integration",
+      "Image Analysis",
+      "APIs",
+      "Database Integration"
     ],
     "repoUrl": null,
     "liveUrl": "https://smilysis.vercel.app/",
