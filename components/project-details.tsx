@@ -27,7 +27,7 @@ export async function ProjectDetails({ project: p, locale }: { project: Portfoli
     <main id="project-main" className="project-detail wrap">
       <Link className="text-link" href="/#projects"><span aria-hidden="true">←</span>{t("backToProjects")}</Link>
       <div className="case-study-intro">
-        <h1>{titleUrl ? <a className="project-title-link" href={titleUrl} target="_blank" rel="noopener noreferrer">{t(`projects.${p.id}.title`)} <span aria-hidden="true">↗</span></a> : t(`projects.${p.id}.title`)}</h1>
+        <h1 className="project-detail-title">{titleUrl ? <a className="project-title-link" href={titleUrl} target="_blank" rel="noopener noreferrer">{t(`projects.${p.id}.title`)} <span aria-hidden="true">↗</span></a> : t(`projects.${p.id}.title`)}</h1>
         <p className="intro">{t(`projects.${p.id}.description`)}</p>
       </div>
       <ul className="case-study-tags project-technologies" dir="ltr" aria-label={t("technologies")}>

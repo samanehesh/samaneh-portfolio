@@ -151,9 +151,9 @@ body{overflow-x:clip}
 @media(max-width:720px){.project-detail{padding-block:24px 48px}.project-detail-image img{padding:10px}}
 
 /* Featured work: staggered, image-led gallery. */
-.featured-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 40px;align-items:start}
+.featured-grid{--gallery-stagger:88px;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 40px;align-items:start;padding-bottom:var(--gallery-stagger)}
 .featured-grid .project-preview{padding:0;border:0;min-width:0}
-.featured-grid .project-preview:nth-child(even){transform:translateY(88px)}
+.featured-grid .project-preview:nth-child(even){transform:translateY(var(--gallery-stagger))}
 .featured-grid .project-card-link{display:block;height:auto;border-radius:22px}
 .project-gallery-image{position:relative;aspect-ratio:1.65;overflow:hidden;border-radius:22px;border:1px solid var(--line);background:linear-gradient(150deg,var(--soft),var(--bg));box-shadow:0 3px 8px #152a1b08;transition:box-shadow .25s,transform .25s}
 .project-gallery-image img{object-fit:cover;object-position:center;transition:transform .35s}
@@ -161,9 +161,9 @@ body{overflow-x:clip}
 .project-card-link:hover .project-gallery-image,.project-card-link:focus-visible .project-gallery-image{box-shadow:0 10px 26px #152a1b14}
 .project-card-link:hover .project-gallery-image img{transform:scale(1.025)}
 .project-card-link:hover .project-gallery-arrow,.project-card-link:focus-visible .project-gallery-arrow{opacity:1;transform:none}
-@media(max-width:1000px){.featured-grid{gap:36px 28px}.featured-grid .project-preview:nth-child(even){transform:translateY(64px)}}
+@media(max-width:1000px){.featured-grid{--gallery-stagger:64px;gap:36px 28px}}
 @media(max-width:720px){
- .featured-grid{grid-template-columns:minmax(0,1fr);gap:30px}
+ .featured-grid{--gallery-stagger:0px;grid-template-columns:minmax(0,1fr);gap:30px}
  .featured-grid .project-preview:nth-child(even){transform:none}
  .project-gallery-image{border-radius:18px}
  .project-gallery-arrow{opacity:1;transform:none}
@@ -215,3 +215,5 @@ html[lang=fa] .project-technologies{justify-content:flex-end}
 .contact-icon{flex-shrink:0;display:block}.contact-links .button{gap:10px}
 
 .case-study-section p+p{margin-top:16px}
+
+.project-detail-title{color:var(--accent)}
