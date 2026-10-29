@@ -12,7 +12,7 @@
   "about": "More about me",
   "projectLabel": "Featured work",
   "projectTitle": "Ideas, brought to life.",
-  "projectIntro": "A selection of team contributions and full-stack projects. Explore each project to learn more.",
+  "projectIntro": "A Selected professional and full-stack projects. Explore each project to learn more.",
   "projects": {
     "dinemetric": {
       "title": "Dinemetric",
@@ -47,7 +47,7 @@
   },
   "contactLabel": "What’s next?",
   "contactTitle": "Let’s make something\nmeaningful.",
-  "contactIntro": "Have an idea, a question, or just want to say hello? This is where our conversation starts.",
+  "contactIntro": "I'm open to full-stack and software development opportunities. If you'd like to discuss a role, project, or collaboration, I'd be happy to connect.",
   "footer": "Built with Next.js. Made with care.",
   "backTop": "Back to top",
   "theme": "Toggle dark theme",
