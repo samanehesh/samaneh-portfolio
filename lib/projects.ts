@@ -5,9 +5,12 @@ export const projects = [
     "art": "dinemetric",
     "tags": [
       "Next.js",
+      "React",
       "TypeScript",
-      "oRPC",
-      "Supabase"
+      "Supabase",
+      "PostgreSQL",
+      "APIs",
+      "AI Integration"
     ],
     "repoUrl": null,
     "liveUrl": "https://dinemetric.vercel.app/",
@@ -32,8 +35,13 @@ export const projects = [
     "art": "cafe",
     "tags": [
       "C#",
-      "ASP.NET Core",
-      "Azure SQL"
+      "ASP.NET Core MVC",
+      "Entity Framework Core",
+      "SQL",
+      "REST APIs",
+      "PayPal API",
+      "Authentication & Authorization",
+      "Azure"
     ],
     "repoUrl": "https://github.com/samanehesh/my-sips",
     "liveUrl": null,

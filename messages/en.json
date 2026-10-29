@@ -12,16 +12,16 @@
   "about": "More about me",
   "projectLabel": "Featured work",
   "projectTitle": "Ideas, brought to life.",
-  "projectIntro": "A Selected professional and full-stack projects. Explore each project to learn more.",
+  "projectIntro": "Selected professional and full-stack projects. Explore each project to learn more.",
   "projects": {
     "dinemetric": {
       "title": "Dinemetric",
       "type": "AI-powered restaurant management & analytics",
       "description": "An AI-powered restaurant platform with menu recommendations and insights to support daily operations.",
-      "problem": "Help restaurant teams turn operational data into actionable insights and AI-powered menu recommendations.",
-      "decision": "Uses a typed oRPC client with request batching to connect the Next.js interface to application services.",
-      "contribution": "Contributed to the team developing Dinemetric, an AI-powered restaurant management platform. The product connects restaurant workflows with operational insights and menu recommendations.",
-      "outcome": "The platform gives restaurant teams a single place to access operational insights and AI-powered menu recommendations.",
+      "problem": "Restaurants often have customer, menu, and operational data spread across different sources, making it difficult to turn that information into useful insights and actionable recommendations.",
+      "decision": "The application uses a modern full-stack architecture with Next.js and TypeScript for the frontend and application layer, Supabase for authentication and database functionality, and API integrations for AI-powered features.\n\nSeparating the application into reusable UI, data-access, and backend workflows helped keep features maintainable while supporting continued product development.",
+      "contribution": "Contributed to the development of Dinemetric, an AI-powered restaurant analytics platform built with Next.js, TypeScript, Supabase, and modern full-stack technologies.\n\nMy work included developing and improving application features, integrating frontend components with backend services and database workflows, debugging full-stack issues, and supporting AI-powered functionality that transforms restaurant data into structured insights and recommendations.\n\nI also worked with API-driven workflows and application state to ensure data could move reliably between the user interface, backend services, database, and AI features.",
+      "outcome": "The platform provides restaurant teams with a centralized way to work with business data and AI-generated insights, helping turn complex information into more understandable and actionable recommendations.",
       "screenshotCaption": "Public sign-in screen · Dinemetric"
     },
     "smilysis": {
@@ -38,10 +38,10 @@
       "title": "Sips Cafe",
       "type": "Full-stack ordering platform",
       "description": "A bubble tea ordering platform with menu browsing, payments, and administration tools.",
-      "problem": "Bring bubble tea ordering, payments, and day-to-day administration into one application.",
-      "decision": "Used ASP.NET Identity for authentication and authorization, with email verification and reCAPTCHA to support account security.",
-      "contribution": "Developed full-stack functionality with C#, ASP.NET Core, and Azure SQL. My work included authentication and authorization with ASP.NET Identity, email verification, reCAPTCHA, REST APIs, and relational database structures.",
-      "outcome": "The team built an ordering platform connecting menu browsing, PayPal checkout, and administration. The project provided hands-on experience integrating identity, APIs, and a relational database.",
+      "problem": "Sips Cafe needed a web-based ordering system that could manage menu items, customization options, customer accounts, orders, and online payments within a single application.",
+      "decision": "I designed the application around relational entities representing menu items, orders, customization options, users, and transactions.\n\nSeparating these concerns through ASP.NET Core MVC, Entity Framework Core, and structured database relationships made it easier to manage complex order customization while maintaining data consistency.",
+      "contribution": "Designed and developed a full-stack cafe ordering application using ASP.NET Core MVC, C#, Entity Framework Core, and a relational database.\n\nI implemented user authentication and authorization, email verification, reCAPTCHA protection, menu and product management, customizable drink options, shopping-cart functionality, and order processing.\n\nI also designed REST-based application workflows, created relational data models for products, orders, transactions, and customization options, and integrated PayPal Checkout for online payments.\n\nAdministrative functionality was added to support role-based access and management of menu items and application data.",
+      "outcome": "The completed application supports the full customer ordering workflow—from account creation and customized product selection through checkout and payment—while also providing administrative functionality for managing menu data and orders.",
       "screenshotCaption": "Storefront homepage · Sips Cafe"
     }
   },

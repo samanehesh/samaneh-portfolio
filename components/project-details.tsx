@@ -37,7 +37,7 @@ export async function ProjectDetails({ project: p, locale }: { project: Portfoli
       <div className="case-study-body">
         {(["problem", "contribution", "decision", "outcome"] as const).map((field, index) => <section className="case-study-section" key={field} aria-labelledby={`case-${field}`}>
           <span className="case-study-number" aria-hidden="true">{sectionNumber.format(index + 1)}</span>
-          <div><h2 id={`case-${field}`}>{t(`caseStudy.${field}`)}</h2><p>{t(`projects.${p.id}.${field}`)}</p></div>
+          <div><h2 id={`case-${field}`}>{t(`caseStudy.${field}`)}</h2>{t(`projects.${p.id}.${field}`).split("\n\n").map((paragraph, paragraphIndex) => <p key={paragraphIndex}>{paragraph}</p>)}</div>
         </section>)}
       </div>
       <nav className="case-study-navigation" aria-label={t("caseStudy.next")}>

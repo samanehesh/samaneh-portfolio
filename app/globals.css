@@ -213,3 +213,5 @@ html[lang=fa] .project-technologies{justify-content:flex-end}
 @media(max-width:440px){.hero-actions{gap:12px}.hero-actions .button{width:100%}.hero-actions>a,.hero-actions .resume-action{width:100%}}
 
 .contact-icon{flex-shrink:0;display:block}.contact-links .button{gap:10px}
+
+.case-study-section p+p{margin-top:16px}
