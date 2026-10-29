@@ -38,23 +38,6 @@ export const projects = [
     "image": "/projects/leadengine.svg"
   },
   {
-    "id": "smilysis",
-    "featured": true,
-    "art": "smilysis",
-    "tags": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "AI Integration",
-      "Image Analysis",
-      "APIs",
-      "Database Integration"
-    ],
-    "repoUrl": null,
-    "liveUrl": "https://smilysis.vercel.app/",
-    "image": "/projects/smilysis.jpg"
-  },
-  {
     "id": "sips",
     "featured": true,
     "art": "cafe",
@@ -71,5 +54,22 @@ export const projects = [
     "repoUrl": "https://github.com/samanehesh/my-sips",
     "liveUrl": null,
     "image": "/projects/sips-home.jpg"
+  },
+  {
+    "id": "smilysis",
+    "featured": true,
+    "art": "smilysis",
+    "tags": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "AI Integration",
+      "Image Analysis",
+      "APIs",
+      "Database Integration"
+    ],
+    "repoUrl": null,
+    "liveUrl": "https://smilysis.vercel.app/",
+    "image": "/projects/smilysis.jpg"
   }
 ] as const;
